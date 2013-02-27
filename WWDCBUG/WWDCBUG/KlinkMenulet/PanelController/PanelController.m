@@ -10,7 +10,7 @@
 
 #define SEARCH_INSET 17
 
-#define POPUP_HEIGHT 205
+#define POPUP_HEIGHT 276
 #define PANEL_WIDTH 330
 #define MENU_ANIMATION_DURATION .1
 
@@ -69,7 +69,7 @@
     int messagesBodyViewHeight = 0.0;
     
     
-    int targetHeight = 159;
+    int targetHeight = POPUP_HEIGHT;
     //if (isSyncing_ShowPanel)
     //    targetHeight += 75;
     [self setPanelHeight:targetHeight];

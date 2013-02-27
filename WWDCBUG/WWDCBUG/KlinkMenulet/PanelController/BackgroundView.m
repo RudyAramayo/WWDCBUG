@@ -49,7 +49,8 @@
     [path lineToPoint:NSMakePoint(_arrowX - ARROW_WIDTH / 2, NSMaxY(contentRect) - ARROW_HEIGHT)];
     [path closePath];
     
-    [[NSColor colorWithDeviceWhite:1 alpha:FILL_OPACITY] setFill];
+    //[[NSColor colorWithDeviceWhite:1 alpha:FILL_OPACITY] setFill];
+    [[NSColor colorWithDeviceWhite:0.0 alpha:FILL_OPACITY] setFill];
     [path fill];
     
     [NSGraphicsContext saveGraphicsState];
@@ -62,6 +63,11 @@
     [[NSColor whiteColor] setStroke];
     [path stroke];
     
+    /*CGContextRef myContext = [[NSGraphicsContext currentContext] graphicsPort];
+
+    CGContextSetRGBFillColor (myContext, 0, 0, 0, 1);
+    CGContextFillRect (myContext, CGRectMake (0, 0, self.frame.size.width, self.frame.size.height));
+    */
     [NSGraphicsContext restoreGraphicsState];
 }
 

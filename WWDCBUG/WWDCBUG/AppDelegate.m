@@ -55,6 +55,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    [_window setLevel:NSPopUpMenuWindowLevel];
     // Insert code here to initialize your application
     self.wwdcCheckTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(wwdcCheck) userInfo:nil repeats:YES];
     [webview setFrameLoadDelegate:self];
