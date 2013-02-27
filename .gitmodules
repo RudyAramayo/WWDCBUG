@@ -1,0 +1,3 @@
+[submodule "thirdparty/LaunchAtLoginController"]
+	path = thirdparty/LaunchAtLoginController
+	url = https://github.com/Mozketo/LaunchAtLoginController.git

@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA6BE6C816DEACF90045BED2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE6C716DEACF90045BED2 /* Cocoa.framework */; };
+		CA6BE6D216DEACF90045BED2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE6D016DEACF90045BED2 /* InfoPlist.strings */; };
+		CA6BE6D416DEACF90045BED2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE6D316DEACF90045BED2 /* main.m */; };
+		CA6BE6D816DEACF90045BED2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE6D616DEACF90045BED2 /* Credits.rtf */; };
+		CA6BE6DB16DEACF90045BED2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE6DA16DEACF90045BED2 /* AppDelegate.m */; };
+		CA6BE6DE16DEACF90045BED2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE6DC16DEACF90045BED2 /* MainMenu.xib */; };
+		CA6BE6E916DEB0140045BED2 /* WWDC2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE6E816DEB0140045BED2 /* WWDC2012.jpg */; };
+		CA6BE71616DEB0BE0045BED2 /* KlinkMenulet.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE6ED16DEB0BE0045BED2 /* KlinkMenulet.m */; };
+		CA6BE71716DEB0BE0045BED2 /* MenubarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE6F016DEB0BE0045BED2 /* MenubarController.m */; };
+		CA6BE71916DEB0BE0045BED2 /* Status_Green.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE6F316DEB0BE0045BED2 /* Status_Green.png */; };
+		CA6BE72316DEB0BE0045BED2 /* StatusItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE6FE16DEB0BE0045BED2 /* StatusItemView.m */; };
+		CA6BE72816DEB0BE0045BED2 /* BackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE70916DEB0BE0045BED2 /* BackgroundView.m */; };
+		CA6BE72C16DEB0BE0045BED2 /* Panel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE71116DEB0BE0045BED2 /* Panel.m */; };
+		CA6BE72D16DEB0BE0045BED2 /* Panel.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE71216DEB0BE0045BED2 /* Panel.xib */; };
+		CA6BE72F16DEB0BE0045BED2 /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE71516DEB0BE0045BED2 /* PanelController.m */; };
+		CA6BE73116DEB0D60045BED2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE73016DEB0D60045BED2 /* Quartz.framework */; };
+		CA6BE73316DEB1850045BED2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE73216DEB1850045BED2 /* WebKit.framework */; };
+		CA6BE73516DEB2CF0045BED2 /* WWDC_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */; };
+		CA6BE73816DEBBA70045BED2 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */; };
+		CA6BE73A16DEC1ED0045BED2 /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA6BE6C316DEACF90045BED2 /* WWDCBUG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCBUG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6BE6C716DEACF90045BED2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CA6BE6CA16DEACF90045BED2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CA6BE6CB16DEACF90045BED2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CA6BE6CC16DEACF90045BED2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA6BE6CF16DEACF90045BED2 /* WWDCBUG-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWDCBUG-Info.plist"; sourceTree = "<group>"; };
+		CA6BE6D116DEACF90045BED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA6BE6D316DEACF90045BED2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA6BE6D516DEACF90045BED2 /* WWDCBUG-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDCBUG-Prefix.pch"; sourceTree = "<group>"; };
+		CA6BE6D716DEACF90045BED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CA6BE6D916DEACF90045BED2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA6BE6DA16DEACF90045BED2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA6BE6DD16DEACF90045BED2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CA6BE6E816DEB0140045BED2 /* WWDC2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WWDC2012.jpg; sourceTree = "<group>"; };
+		CA6BE6EC16DEB0BE0045BED2 /* KlinkMenulet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KlinkMenulet.h; sourceTree = "<group>"; };
+		CA6BE6ED16DEB0BE0045BED2 /* KlinkMenulet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KlinkMenulet.m; sourceTree = "<group>"; };
+		CA6BE6EF16DEB0BE0045BED2 /* MenubarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenubarController.h; sourceTree = "<group>"; };
+		CA6BE6F016DEB0BE0045BED2 /* MenubarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenubarController.m; sourceTree = "<group>"; };
+		CA6BE6F316DEB0BE0045BED2 /* Status_Green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Status_Green.png; sourceTree = "<group>"; };
+		CA6BE6FD16DEB0BE0045BED2 /* StatusItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusItemView.h; sourceTree = "<group>"; };
+		CA6BE6FE16DEB0BE0045BED2 /* StatusItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusItemView.m; sourceTree = "<group>"; };
+		CA6BE70816DEB0BE0045BED2 /* BackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundView.h; sourceTree = "<group>"; };
+		CA6BE70916DEB0BE0045BED2 /* BackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundView.m; sourceTree = "<group>"; };
+		CA6BE71016DEB0BE0045BED2 /* Panel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panel.h; sourceTree = "<group>"; };
+		CA6BE71116DEB0BE0045BED2 /* Panel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Panel.m; sourceTree = "<group>"; };
+		CA6BE71216DEB0BE0045BED2 /* Panel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Panel.xib; sourceTree = "<group>"; };
+		CA6BE71416DEB0BE0045BED2 /* PanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanelController.h; sourceTree = "<group>"; };
+		CA6BE71516DEB0BE0045BED2 /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
+		CA6BE73016DEB0D60045BED2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		CA6BE73216DEB1850045BED2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WWDC_icon.icns; sourceTree = "<group>"; };
+		CA6BE73616DEBBA60045BED2 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
+		CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
+		CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA6BE6C016DEACF90045BED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6BE73316DEB1850045BED2 /* WebKit.framework in Frameworks */,
+				CA6BE73116DEB0D60045BED2 /* Quartz.framework in Frameworks */,
+				CA6BE6C816DEACF90045BED2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA6BE6B816DEACF90045BED2 = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6CD16DEACF90045BED2 /* WWDCBUG */,
+				CA6BE6C616DEACF90045BED2 /* Frameworks */,
+				CA6BE6C416DEACF90045BED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6BE6C416DEACF90045BED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6C316DEACF90045BED2 /* WWDCBUG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6BE6C616DEACF90045BED2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE73216DEB1850045BED2 /* WebKit.framework */,
+				CA6BE73016DEB0D60045BED2 /* Quartz.framework */,
+				CA6BE6C716DEACF90045BED2 /* Cocoa.framework */,
+				CA6BE6C916DEACF90045BED2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA6BE6C916DEACF90045BED2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6CA16DEACF90045BED2 /* AppKit.framework */,
+				CA6BE6CB16DEACF90045BED2 /* CoreData.framework */,
+				CA6BE6CC16DEACF90045BED2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CA6BE6CD16DEACF90045BED2 /* WWDCBUG */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6D916DEACF90045BED2 /* AppDelegate.h */,
+				CA6BE6DA16DEACF90045BED2 /* AppDelegate.m */,
+				CA6BE6DC16DEACF90045BED2 /* MainMenu.xib */,
+				CA6BE73616DEBBA60045BED2 /* LaunchAtLoginController.h */,
+				CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */,
+				CA6BE6EB16DEB0BE0045BED2 /* KlinkMenulet */,
+				CA6BE6CE16DEACF90045BED2 /* Supporting Files */,
+			);
+			path = WWDCBUG;
+			sourceTree = "<group>";
+		};
+		CA6BE6CE16DEACF90045BED2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */,
+				CA6BE6CF16DEACF90045BED2 /* WWDCBUG-Info.plist */,
+				CA6BE6D016DEACF90045BED2 /* InfoPlist.strings */,
+				CA6BE6D316DEACF90045BED2 /* main.m */,
+				CA6BE6D516DEACF90045BED2 /* WWDCBUG-Prefix.pch */,
+				CA6BE6D616DEACF90045BED2 /* Credits.rtf */,
+				CA6BE6E816DEB0140045BED2 /* WWDC2012.jpg */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA6BE6EB16DEB0BE0045BED2 /* KlinkMenulet */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6EC16DEB0BE0045BED2 /* KlinkMenulet.h */,
+				CA6BE6ED16DEB0BE0045BED2 /* KlinkMenulet.m */,
+				CA6BE6EE16DEB0BE0045BED2 /* MenubarController */,
+				CA6BE6FF16DEB0BE0045BED2 /* PanelController */,
+			);
+			path = KlinkMenulet;
+			sourceTree = "<group>";
+		};
+		CA6BE6EE16DEB0BE0045BED2 /* MenubarController */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6EF16DEB0BE0045BED2 /* MenubarController.h */,
+				CA6BE6F016DEB0BE0045BED2 /* MenubarController.m */,
+				CA6BE6F116DEB0BE0045BED2 /* StatusItemImages */,
+				CA6BE6FD16DEB0BE0045BED2 /* StatusItemView.h */,
+				CA6BE6FE16DEB0BE0045BED2 /* StatusItemView.m */,
+			);
+			path = MenubarController;
+			sourceTree = "<group>";
+		};
+		CA6BE6F116DEB0BE0045BED2 /* StatusItemImages */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE6F316DEB0BE0045BED2 /* Status_Green.png */,
+				CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */,
+			);
+			path = StatusItemImages;
+			sourceTree = "<group>";
+		};
+		CA6BE6FF16DEB0BE0045BED2 /* PanelController */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE70816DEB0BE0045BED2 /* BackgroundView.h */,
+				CA6BE70916DEB0BE0045BED2 /* BackgroundView.m */,
+				CA6BE71016DEB0BE0045BED2 /* Panel.h */,
+				CA6BE71116DEB0BE0045BED2 /* Panel.m */,
+				CA6BE71216DEB0BE0045BED2 /* Panel.xib */,
+				CA6BE71416DEB0BE0045BED2 /* PanelController.h */,
+				CA6BE71516DEB0BE0045BED2 /* PanelController.m */,
+			);
+			path = PanelController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA6BE6C216DEACF90045BED2 /* WWDCBUG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA6BE6E116DEACF90045BED2 /* Build configuration list for PBXNativeTarget "WWDCBUG" */;
+			buildPhases = (
+				CA6BE6BF16DEACF90045BED2 /* Sources */,
+				CA6BE6C016DEACF90045BED2 /* Frameworks */,
+				CA6BE6C116DEACF90045BED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWDCBUG;
+			productName = WWDCBUG;
+			productReference = CA6BE6C316DEACF90045BED2 /* WWDCBUG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA6BE6BA16DEACF90045BED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = OrbitusRobotics;
+			};
+			buildConfigurationList = CA6BE6BD16DEACF90045BED2 /* Build configuration list for PBXProject "WWDCBUG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA6BE6B816DEACF90045BED2;
+			productRefGroup = CA6BE6C416DEACF90045BED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA6BE6C216DEACF90045BED2 /* WWDCBUG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA6BE6C116DEACF90045BED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6BE6D216DEACF90045BED2 /* InfoPlist.strings in Resources */,
+				CA6BE6D816DEACF90045BED2 /* Credits.rtf in Resources */,
+				CA6BE6DE16DEACF90045BED2 /* MainMenu.xib in Resources */,
+				CA6BE6E916DEB0140045BED2 /* WWDC2012.jpg in Resources */,
+				CA6BE71916DEB0BE0045BED2 /* Status_Green.png in Resources */,
+				CA6BE72D16DEB0BE0045BED2 /* Panel.xib in Resources */,
+				CA6BE73516DEB2CF0045BED2 /* WWDC_icon.icns in Resources */,
+				CA6BE73A16DEC1ED0045BED2 /* StatusHighlighted.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA6BE6BF16DEACF90045BED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6BE6D416DEACF90045BED2 /* main.m in Sources */,
+				CA6BE6DB16DEACF90045BED2 /* AppDelegate.m in Sources */,
+				CA6BE71616DEB0BE0045BED2 /* KlinkMenulet.m in Sources */,
+				CA6BE71716DEB0BE0045BED2 /* MenubarController.m in Sources */,
+				CA6BE72316DEB0BE0045BED2 /* StatusItemView.m in Sources */,
+				CA6BE72816DEB0BE0045BED2 /* BackgroundView.m in Sources */,
+				CA6BE72C16DEB0BE0045BED2 /* Panel.m in Sources */,
+				CA6BE72F16DEB0BE0045BED2 /* PanelController.m in Sources */,
+				CA6BE73816DEBBA70045BED2 /* LaunchAtLoginController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA6BE6D016DEACF90045BED2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6BE6D116DEACF90045BED2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA6BE6D616DEACF90045BED2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6BE6D716DEACF90045BED2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CA6BE6DC16DEACF90045BED2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6BE6DD16DEACF90045BED2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA6BE6DF16DEACF90045BED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CA6BE6E016DEACF90045BED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CA6BE6E216DEACF90045BED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCBUG/WWDCBUG-Prefix.pch";
+				INFOPLIST_FILE = "WWDCBUG/WWDCBUG-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CA6BE6E316DEACF90045BED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCBUG/WWDCBUG-Prefix.pch";
+				INFOPLIST_FILE = "WWDCBUG/WWDCBUG-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA6BE6BD16DEACF90045BED2 /* Build configuration list for PBXProject "WWDCBUG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6BE6DF16DEACF90045BED2 /* Debug */,
+				CA6BE6E016DEACF90045BED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA6BE6E116DEACF90045BED2 /* Build configuration list for PBXNativeTarget "WWDCBUG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6BE6E216DEACF90045BED2 /* Debug */,
+				CA6BE6E316DEACF90045BED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA6BE6BA16DEACF90045BED2 /* Project object */;
+}
