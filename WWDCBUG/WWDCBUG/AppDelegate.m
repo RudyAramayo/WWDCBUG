@@ -177,7 +177,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
     BOOL success = [CTSMTPConnection sendMessage:msg
                                           server:@"smtp.gmail.com"
                                         username:@"rudy@klinkcdc.com"
-                                        password:@"*******"
+                                        password:@"Littlebro2"
                                             port:587
                                   connectionType:CTSMTPConnectionTypeStartTLS
                                          useAuth:YES
