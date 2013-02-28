@@ -10,6 +10,7 @@
 #import "KlinkMenulet.h"
 #import "LaunchAtLoginController.h"
 
+#import <MailCore/MailCore.h>
 #import <CommonCrypto/CommonDigest.h>
 
 NSString* getMD5FromFile(NSString *pathToFile)
@@ -124,11 +125,18 @@ NSString* getMD5FromFile(NSString *pathToFile)
     if ([getMD5FromFile(saveFileLocation) isEqualToString:@"366accf9db73fd3031b584b746f504b9"])
     {
         NSLog(@"No changes...");
-  
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(){
+            [self soundTheAlarm];
+        });
     }
     else
     {
         NSLog(@"SOUND THE ALARM!!! YOU MUST BUY YOUR TICKET NOW!");
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(){
+            [self soundTheAlarm];
+        });
+
         
         NSAlert *testAlert = [NSAlert alertWithMessageText:@"BUY YOUR TICKETS NOW!"
                                              defaultButton:@"HOLY SHIT!"
@@ -156,6 +164,32 @@ NSString* getMD5FromFile(NSString *pathToFile)
         [klinkMenulet setSync_Idle_Status];
     });
 
+}
+
+
+- (void) soundTheAlarm
+{
+    CTCoreMessage *msg = [[CTCoreMessage alloc] init];
+    CTCoreAddress *toAddress = [CTCoreAddress addressWithName:@"Rudy"
+                                                        email:@"rudy@klinkcdc.com"];
+    [msg setTo:[NSSet setWithObject:toAddress]];
+    [msg setBody:@"BUY YOUR FUCKING WWDC TICKET T-T-TODAY JUNIOR!"];
+    [msg setSubject:@"WWDC TICKETS AVAILABLE!!!"];
+    
+    NSError *error = nil;
+    BOOL success = [CTSMTPConnection sendMessage:msg
+                                          server:@"smtp.gmail.com"
+                                        username:@"rudy@klinkcdc.com"
+                                        password:@"**********"
+                                            port:587
+                                  connectionType:CTSMTPConnectionTypeStartTLS
+                                         useAuth:YES
+                                           error:&error];
+    
+    if (error)
+    {
+        NSLog(@"ERROR = %@", [error localizedDescription]);
+    }
 }
 
 // -------------------------------------------------------------------------------

@@ -27,7 +27,45 @@
 		CA6BE73516DEB2CF0045BED2 /* WWDC_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */; };
 		CA6BE73816DEBBA70045BED2 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */; };
 		CA6BE73A16DEC1ED0045BED2 /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */; };
+		CA6BE76A16DECA7D0045BED2 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76916DECA7D0045BED2 /* libssl.dylib */; };
+		CA6BE76C16DECA8E0045BED2 /* libsasl2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76B16DECA8E0045BED2 /* libsasl2.dylib */; };
+		CA6BE76E16DECA960045BED2 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76D16DECA960045BED2 /* libcrypto.dylib */; };
+		CA6BE77016DECA9F0045BED2 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76F16DECA9F0045BED2 /* libiconv.dylib */; };
+		CA6BE77216DECAA60045BED2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE77116DECAA60045BED2 /* CFNetwork.framework */; };
+		CA6BE78616DECE440045BED2 /* MailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76316DECA530045BED2 /* MailCore.framework */; };
+		CA6BE78A16DECF060045BED2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE78916DECF060045BED2 /* CoreServices.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA6BE76216DECA530045BED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = MailCore;
+		};
+		CA6BE76416DECA530045BED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8618B5710DADB5C00C41188;
+			remoteInfo = "MailCore iOS";
+		};
+		CA6BE76616DECA530045BED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8DFCF4915801A5000C01975;
+			remoteInfo = Tests;
+		};
+		CA6BE77316DECAD20045BED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8618B5610DADB5C00C41188;
+			remoteInfo = "MailCore iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA6BE6C316DEACF90045BED2 /* WWDCBUG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCBUG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +102,14 @@
 		CA6BE73616DEBBA60045BED2 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
 		CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 		CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
+		CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MailCore.xcodeproj; path = ../thirdparty/MailCore/MailCore.xcodeproj; sourceTree = "<group>"; };
+		CA6BE76916DECA7D0045BED2 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		CA6BE76B16DECA8E0045BED2 /* libsasl2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsasl2.dylib; path = usr/lib/libsasl2.dylib; sourceTree = SDKROOT; };
+		CA6BE76D16DECA960045BED2 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		CA6BE76F16DECA9F0045BED2 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		CA6BE77116DECAA60045BED2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CA6BE78716DECEDE0045BED2 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		CA6BE78916DECF060045BED2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +117,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA6BE78A16DECF060045BED2 /* CoreServices.framework in Frameworks */,
+				CA6BE78616DECE440045BED2 /* MailCore.framework in Frameworks */,
+				CA6BE77216DECAA60045BED2 /* CFNetwork.framework in Frameworks */,
+				CA6BE77016DECA9F0045BED2 /* libiconv.dylib in Frameworks */,
+				CA6BE76E16DECA960045BED2 /* libcrypto.dylib in Frameworks */,
+				CA6BE76C16DECA8E0045BED2 /* libsasl2.dylib in Frameworks */,
+				CA6BE76A16DECA7D0045BED2 /* libssl.dylib in Frameworks */,
 				CA6BE73316DEB1850045BED2 /* WebKit.framework in Frameworks */,
 				CA6BE73116DEB0D60045BED2 /* Quartz.framework in Frameworks */,
 				CA6BE6C816DEACF90045BED2 /* Cocoa.framework in Frameworks */,
@@ -83,6 +136,14 @@
 		CA6BE6B816DEACF90045BED2 = {
 			isa = PBXGroup;
 			children = (
+				CA6BE78916DECF060045BED2 /* CoreServices.framework */,
+				CA6BE78716DECEDE0045BED2 /* ApplicationServices.framework */,
+				CA6BE77116DECAA60045BED2 /* CFNetwork.framework */,
+				CA6BE76F16DECA9F0045BED2 /* libiconv.dylib */,
+				CA6BE76D16DECA960045BED2 /* libcrypto.dylib */,
+				CA6BE76B16DECA8E0045BED2 /* libsasl2.dylib */,
+				CA6BE76916DECA7D0045BED2 /* libssl.dylib */,
+				CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */,
 				CA6BE6CD16DEACF90045BED2 /* WWDCBUG */,
 				CA6BE6C616DEACF90045BED2 /* Frameworks */,
 				CA6BE6C416DEACF90045BED2 /* Products */,
@@ -192,6 +253,16 @@
 			path = PanelController;
 			sourceTree = "<group>";
 		};
+		CA6BE75716DECA530045BED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6BE76316DECA530045BED2 /* MailCore.framework */,
+				CA6BE76516DECA530045BED2 /* libmailcore.a */,
+				CA6BE76716DECA530045BED2 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +277,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CA6BE77416DECAD20045BED2 /* PBXTargetDependency */,
 			);
 			name = WWDCBUG;
 			productName = WWDCBUG;
@@ -231,12 +303,42 @@
 			mainGroup = CA6BE6B816DEACF90045BED2;
 			productRefGroup = CA6BE6C416DEACF90045BED2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CA6BE75716DECA530045BED2 /* Products */;
+					ProjectRef = CA6BE75616DECA530045BED2 /* MailCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CA6BE6C216DEACF90045BED2 /* WWDCBUG */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CA6BE76316DECA530045BED2 /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = CA6BE76216DECA530045BED2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6BE76516DECA530045BED2 /* libmailcore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmailcore.a;
+			remoteRef = CA6BE76416DECA530045BED2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CA6BE76716DECA530045BED2 /* Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.octest;
+			remoteRef = CA6BE76616DECA530045BED2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA6BE6C116DEACF90045BED2 /* Resources */ = {
@@ -274,6 +376,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA6BE77416DECAD20045BED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MailCore iOS";
+			targetProxy = CA6BE77316DECAD20045BED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA6BE6D016DEACF90045BED2 /* InfoPlist.strings */ = {
@@ -360,6 +470,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDCBUG/WWDCBUG-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include/**";
 				INFOPLIST_FILE = "WWDCBUG/WWDCBUG-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -372,6 +483,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WWDCBUG/WWDCBUG-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/../../include/**";
 				INFOPLIST_FILE = "WWDCBUG/WWDCBUG-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

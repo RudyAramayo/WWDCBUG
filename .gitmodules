@@ -1,3 +1,6 @@
 [submodule "thirdparty/LaunchAtLoginController"]
 	path = thirdparty/LaunchAtLoginController
 	url = https://github.com/Mozketo/LaunchAtLoginController.git
+[submodule "thirdparty/MailCore"]
+	path = thirdparty/MailCore
+	url = https://github.com/mronge/MailCore.git
