@@ -125,9 +125,6 @@ NSString* getMD5FromFile(NSString *pathToFile)
     if ([getMD5FromFile(saveFileLocation) isEqualToString:@"366accf9db73fd3031b584b746f504b9"])
     {
         NSLog(@"No changes...");
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^(){
-            [self soundTheAlarm];
-        });
     }
     else
     {
@@ -180,7 +177,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
     BOOL success = [CTSMTPConnection sendMessage:msg
                                           server:@"smtp.gmail.com"
                                         username:@"rudy@klinkcdc.com"
-                                        password:@"**********"
+                                        password:@"*******"
                                             port:587
                                   connectionType:CTSMTPConnectionTypeStartTLS
                                          useAuth:YES
