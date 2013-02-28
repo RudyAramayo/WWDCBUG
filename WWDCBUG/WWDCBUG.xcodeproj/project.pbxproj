@@ -24,7 +24,6 @@
 		CA6BE72F16DEB0BE0045BED2 /* PanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE71516DEB0BE0045BED2 /* PanelController.m */; };
 		CA6BE73116DEB0D60045BED2 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE73016DEB0D60045BED2 /* Quartz.framework */; };
 		CA6BE73316DEB1850045BED2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE73216DEB1850045BED2 /* WebKit.framework */; };
-		CA6BE73516DEB2CF0045BED2 /* WWDC_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */; };
 		CA6BE73816DEBBA70045BED2 /* LaunchAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */; };
 		CA6BE73A16DEC1ED0045BED2 /* StatusHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */; };
 		CA6BE76A16DECA7D0045BED2 /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76916DECA7D0045BED2 /* libssl.dylib */; };
@@ -34,6 +33,8 @@
 		CA6BE77216DECAA60045BED2 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE77116DECAA60045BED2 /* CFNetwork.framework */; };
 		CA6BE78616DECE440045BED2 /* MailCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE76316DECA530045BED2 /* MailCore.framework */; };
 		CA6BE78A16DECF060045BED2 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6BE78916DECF060045BED2 /* CoreServices.framework */; };
+		CA6BE7CA16DED8DF0045BED2 /* WWDC_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = CA6BE7C916DED8DF0045BED2 /* WWDC_icon.icns */; };
+		CA6BE7CC16DEDBAE0045BED2 /* MailCore.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CA6BE76316DECA530045BED2 /* MailCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CA6BE7CB16DEDBA50045BED2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CA6BE7CC16DEDBAE0045BED2 /* MailCore.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CA6BE6C316DEACF90045BED2 /* WWDCBUG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCBUG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA6BE6C716DEACF90045BED2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -98,7 +112,6 @@
 		CA6BE71516DEB0BE0045BED2 /* PanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanelController.m; sourceTree = "<group>"; };
 		CA6BE73016DEB0D60045BED2 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		CA6BE73216DEB1850045BED2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WWDC_icon.icns; sourceTree = "<group>"; };
 		CA6BE73616DEBBA60045BED2 /* LaunchAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAtLoginController.h; sourceTree = "<group>"; };
 		CA6BE73716DEBBA60045BED2 /* LaunchAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAtLoginController.m; sourceTree = "<group>"; };
 		CA6BE73916DEC1ED0045BED2 /* StatusHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusHighlighted.png; sourceTree = "<group>"; };
@@ -110,6 +123,7 @@
 		CA6BE77116DECAA60045BED2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CA6BE78716DECEDE0045BED2 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		CA6BE78916DECF060045BED2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		CA6BE7C916DED8DF0045BED2 /* WWDC_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WWDC_icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,7 @@
 		CA6BE6B816DEACF90045BED2 = {
 			isa = PBXGroup;
 			children = (
+				CA6BE7C916DED8DF0045BED2 /* WWDC_icon.icns */,
 				CA6BE78916DECF060045BED2 /* CoreServices.framework */,
 				CA6BE78716DECEDE0045BED2 /* ApplicationServices.framework */,
 				CA6BE77116DECAA60045BED2 /* CFNetwork.framework */,
@@ -196,7 +211,6 @@
 		CA6BE6CE16DEACF90045BED2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA6BE73416DEB2CF0045BED2 /* WWDC_icon.icns */,
 				CA6BE6CF16DEACF90045BED2 /* WWDCBUG-Info.plist */,
 				CA6BE6D016DEACF90045BED2 /* InfoPlist.strings */,
 				CA6BE6D316DEACF90045BED2 /* main.m */,
@@ -273,6 +287,7 @@
 				CA6BE6BF16DEACF90045BED2 /* Sources */,
 				CA6BE6C016DEACF90045BED2 /* Frameworks */,
 				CA6BE6C116DEACF90045BED2 /* Resources */,
+				CA6BE7CB16DEDBA50045BED2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -351,8 +366,8 @@
 				CA6BE6E916DEB0140045BED2 /* WWDC2012.jpg in Resources */,
 				CA6BE71916DEB0BE0045BED2 /* Status_Green.png in Resources */,
 				CA6BE72D16DEB0BE0045BED2 /* Panel.xib in Resources */,
-				CA6BE73516DEB2CF0045BED2 /* WWDC_icon.icns in Resources */,
 				CA6BE73A16DEC1ED0045BED2 /* StatusHighlighted.png in Resources */,
+				CA6BE7CA16DED8DF0045BED2 /* WWDC_icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
