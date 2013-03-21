@@ -122,7 +122,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
     [result writeToFile:saveFileLocation atomically:YES];
     
     
-    if ([getMD5FromFile(saveFileLocation) isEqualToString:@"366accf9db73fd3031b584b746f504b9"])
+    if ([getMD5FromFile(saveFileLocation) isEqualToString:@"f89f6b4e18a98eca5e3cf984dea9ad93"])
     {
         NSLog(@"No changes...");
     }
@@ -177,7 +177,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
     BOOL success = [CTSMTPConnection sendMessage:msg
                                           server:@"smtp.gmail.com"
                                         username:@"rudy@klinkcdc.com"
-                                        password:@"*******"
+                                        password:@"Littlebro2"
                                             port:587
                                   connectionType:CTSMTPConnectionTypeStartTLS
                                          useAuth:YES
