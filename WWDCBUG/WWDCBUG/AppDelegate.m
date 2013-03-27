@@ -122,7 +122,7 @@ NSString* getMD5FromFile(NSString *pathToFile)
     [result writeToFile:saveFileLocation atomically:YES];
     
     
-    if ([getMD5FromFile(saveFileLocation) isEqualToString:@"f89f6b4e18a98eca5e3cf984dea9ad93"])
+    if ([getMD5FromFile(saveFileLocation) isEqualToString:@"1d91c54418625a1ab121b97d3d1f7f8e"])
     {
         NSLog(@"No changes...");
     }
